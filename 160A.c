@@ -2,7 +2,7 @@
 int main()
 {
   int a;
-  scanf("%d", &a);
+  scanf("%d",&a);
   int arr[a];
   int sum = 0;
   int max = 0;
@@ -12,8 +12,9 @@ int main()
   for (int i = 0; i < a; i++)
   {
     scanf("%d", &arr[i]);
+    
   }
-  for (int i = 0; i < 101; i++)
+  for(int i=0;i<101;i++)
   {
     hash[i] = 0;
   }
@@ -36,6 +37,6 @@ int main()
     hash[max]--;
     j++;
   }
-  printf("%d", j);
+  printf("%d",j);
   return 0;
 }
