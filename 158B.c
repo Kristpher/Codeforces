@@ -2,7 +2,6 @@
 int main()
 {
     int a;
-    int c = 1;
     scanf("%d", &a);
     int hash[4] = {0};
     int arr[a];
@@ -24,13 +23,12 @@ int main()
         count++;
         hash[0] = hash[0] - 2;
     }
-    if (hash[0] > 0)
-    {
-        if(hash[0]%4==0 
+    if (hash[0] > 0){
+        if(hash[0]%4==0 )
         count = count+hash[0]/4;
         else if(hash[0]%4!=0)
         count=count+1+hash[0]/4;
-    }
-    printf("%d", count);
+      }
+      printf("%d", count);
     return 0;
 }
